@@ -56,10 +56,9 @@
         color: #57614c;
       }
 
-      /* Add a media query for screens smaller than 600px */
       @media screen and (max-width: 1600px) {
         #registerBtn {
-          right: 20px; /* adjust this value as needed */
+          right: 20px;
         }
       }
 
@@ -114,7 +113,6 @@
         position: fixed;
         top: 20px;
         left: 20px;
-        z-index: 999;
       }
 
       /* Dropdown menu */
@@ -226,14 +224,13 @@
       }
 
       .modal {
-        display: none;
-        position: fixed;
+        display: flex;
+        position: absolute;
         z-index: 1;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        overflow: auto;
         background-color: rgba(49, 55, 43, 0.4);
         display: flex;
         align-items: center;
@@ -251,6 +248,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
         color: #d7d9d4;
+        overflow: auto;
       }
 
       .modal-content #form-ct {
