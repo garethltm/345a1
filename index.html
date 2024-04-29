@@ -78,6 +78,7 @@
           border: none;
           color: #c8e1b0;
           padding: 10px;
+          font-family: poppins, sans-serif;
           font-size: 20px;
           cursor: pointer;
           transition-duration: 0.4s;
@@ -90,6 +91,8 @@
           content: "\f007";
           font-family: "Font Awesome 5 Free";
           font-weight: 900;
+          color: #57614c;
+
         }
 
         #registerBtn span {
@@ -102,10 +105,11 @@
       }
 
       #registrationModal .modal-content #form-ct form input[type="submit"] {
-        background-color: #31372b;
-        color: #d7d9d4;
+        background-color: #c8e1b0;
+        color: #57614c;
         padding: 10px 20px;
         border: 1px solid #888;
+        font-family: poppins, sans-serif;
         cursor: pointer;
         transition: background-color 0.3s ease;
       }
@@ -115,8 +119,8 @@
         #form-ct
         form
         input[type="submit"]:hover {
-        background-color: #d7d9d4;
-        color: #31372b;
+        background-color: #31372B;
+        color: #c8e1b0;
       }
 
       #registrationModal .modal-content #form-ct form input[type="text"],
@@ -124,7 +128,8 @@
       #registrationModal .modal-content #form-ct form input[type="tel"],
       #registrationModal .modal-content #form-ct form input[type="email"] {
         background-color: #31372b;
-        color: #d7d9d4;
+        font-family: poppins, sans-serif;
+        color: #a3b68f;
         padding: 10px;
         border: 1px solid #888;
         margin-bottom: 10px;
@@ -147,6 +152,14 @@
         border-color: #d7d9d4;
       }
 
+      #form-ct h3 {
+        color: #c8e1b0;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+      
+
       @media screen and (max-width: 1600px) {
         #registerBtn {
           right: 20px;
@@ -162,7 +175,7 @@
       }
 
       nav a {
-        color: #a9aca4;
+        color: #c8e1b0;
         text-decoration: none;
         padding: 10px 50px;
         transition: background-color 0.3s ease;
@@ -170,7 +183,7 @@
 
       nav a:hover {
         background-color: #57614c;
-        color: #d7d9d4;
+        color: #c8e1b0;
       }
 
       nav .nav-buttons {
@@ -196,7 +209,6 @@
         background-color: #45a049;
       }
 
-      /* Hamburger menu */
       .hamburger {
         display: none;
         font-size: 50px;
@@ -206,7 +218,6 @@
         left: 20px;
       }
 
-      /* Dropdown menu */
       .dropdown {
         display: none;
         position: absolute;
@@ -216,7 +227,7 @@
       }
 
       .dropdown a {
-        color: black;
+        color: #0b0c0a;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -231,7 +242,6 @@
           display: none;
         }
 
-        /* Hamburger menu */
         .hamburger {
           display: block;
           font-size: 50px;
@@ -241,7 +251,6 @@
           left: 20px;
         }
 
-        /* Dropdown menu */
         .dropdown {
           display: block;
           position: fixed;
@@ -260,7 +269,7 @@
         }
 
         .dropdown .dropdown-content a {
-          color: #d7d9d4;
+          color: #c8e1b0;
           padding: 10px;
           text-decoration: none;
           display: block;
@@ -298,7 +307,7 @@
       }
 
       .content h2 {
-        color: #7b8a75;
+        color: #c8e1b0;
       }
 
       .content p {
@@ -313,6 +322,7 @@
       }
 
       .modal {
+        display: none;
         position: fixed;
         left: 50%;
         top: 50%;
@@ -352,7 +362,7 @@
       }
 
       .close {
-        color: #aaa;
+        color: #c8e1b0;
         float: right;
         font-size: 28px;
         font-weight: bold;
@@ -360,7 +370,7 @@
 
       .close:hover,
       .close:focus {
-        color: black;
+        color: #0b0c0a;
         text-decoration: none;
         cursor: pointer;
       }
@@ -375,7 +385,7 @@
         <a href="#">Join</a>
         <a href="#">Take Action</a>
       </div>
-      <img src="logo.png" alt="Logo" style="width: 200px; height: 160%" />
+      <img src="logo3.png" alt="Logo" style="width: 200px; height: 160%" />
       <div>
         <a href="#">Learn</a>
         <a href="#">News</a>
@@ -416,7 +426,6 @@
       <p>&copy; 2024 Freecycle!</p>
     </footer>
 
-    <!-- Registration Modal -->
     <div id="registrationModal" class="modal">
       <div class="modal-content">
         <span class="close">×</span>
