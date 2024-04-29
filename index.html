@@ -104,7 +104,7 @@
         }
       }
 
-      #registrationModal .modal-content #form-ct form input[type="submit"] {
+      #trigger-modal .modal-content #form-ct form input[type="submit"] {
         background-color: #c8e1b0;
         color: #57614c;
         padding: 10px 20px;
@@ -114,7 +114,7 @@
         transition: background-color 0.3s ease;
       }
 
-      #registrationModal
+      #trigger-modal
         .modal-content
         #form-ct
         form
@@ -123,10 +123,10 @@
         color: #c8e1b0;
       }
 
-      #registrationModal .modal-content #form-ct form input[type="text"],
-      #registrationModal .modal-content #form-ct form input[type="password"],
-      #registrationModal .modal-content #form-ct form input[type="tel"],
-      #registrationModal .modal-content #form-ct form input[type="email"] {
+      #trigger-modal .modal-content #form-ct form input[type="text"],
+      #trigger-modal .modal-content #form-ct form input[type="password"],
+      #trigger-modal .modal-content #form-ct form input[type="tel"],
+      #trigger-modal .modal-content #form-ct form input[type="email"] {
         background-color: #31372b;
         font-family: poppins, sans-serif;
         color: #a3b68f;
@@ -136,14 +136,14 @@
         width: 100%;
       }
 
-      #registrationModal .modal-content #form-ct form input[type="text"]:focus,
-      #registrationModal
+      #trigger-modal .modal-content #form-ct form input[type="text"]:focus,
+      #trigger-modal
         .modal-content
         #form-ct
         form
         input[type="password"]:focus,
-      #registrationModal .modal-content #form-ct form input[type="tel"]:focus,
-      #registrationModal
+      #trigger-modal .modal-content #form-ct form input[type="tel"]:focus,
+      #trigger-modal
         .modal-content
         #form-ct
         form
@@ -201,14 +201,6 @@
         transition: background-color 0.3s ease;
       }
 
-      nav .nav-buttons button:hover {
-        background-color: #45a049;
-      }
-
-      .navbar .nav-buttons button:hover {
-        background-color: #45a049;
-      }
-
       .hamburger {
         display: none;
         font-size: 50px;
@@ -263,13 +255,13 @@
 
         .dropdown .dropdown-content {
           display: none;
-          background-color: #7d8c6d;
+          background-color: #a3b68f;
           padding: 10px;
           z-index: 999;
         }
 
         .dropdown .dropdown-content a {
-          color: #c8e1b0;
+          color: #31372B;
           padding: 10px;
           text-decoration: none;
           display: block;
@@ -277,6 +269,7 @@
 
         .dropdown .dropdown-content a:hover {
           background-color: #57614c;
+          color: #c8e1b0;
         }
       }
 
@@ -426,7 +419,7 @@
       <p>&copy; 2024 Freecycle!</p>
     </footer>
 
-    <div id="registrationModal" class="modal">
+    <div id="trigger-modal" class="modal">
       <div class="modal-content">
         <span class="close">×</span>
 
@@ -515,7 +508,7 @@
         dropdownContent.style.display =
           dropdownContent.style.display === "block" ? "none" : "block";
       });
-      var modal = document.getElementById("registrationModal");
+      var modal = document.getElementById("trigger-modal");
       var btn = document.getElementById("registerBtn");
       var span = document.getElementsByClassName("close")[0];
 
