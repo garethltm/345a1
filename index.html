@@ -107,7 +107,7 @@
         background-color: #c8e1b0;
         color: #57614c;
         padding: 10px 20px;
-        border: 1px solid #888;
+        border: 1px solid #a3b68f;
         font-family: poppins, sans-serif;
         cursor: pointer;
         transition: background-color 0.3s ease;
@@ -123,10 +123,10 @@
       #trigger-modal .modal-content #form-ct form input[type="tel"],
       #trigger-modal .modal-content #form-ct form input[type="email"] {
         background-color: #31372b;
+        color: #c8e1b0;
         font-family: poppins, sans-serif;
-        color: #a3b68f;
         padding: 10px;
-        border: 1px solid #888;
+        border: 1px solid #c8e1b0;
         margin-bottom: 10px;
         width: 100%;
       }
@@ -136,7 +136,8 @@
       #trigger-modal .modal-content #form-ct form input[type="tel"]:focus,
       #trigger-modal .modal-content #form-ct form input[type="email"]:focus {
         outline: none;
-        border-color: #d7d9d4;
+        color: #c8e1b0;
+        border-color: #c8e1b0;
       }
 
       #form-ct h3 {
@@ -155,7 +156,6 @@
       }
 
       #trigger-modal .modal-content #form-ct form > div {
-        background-color: #57614c;
         padding: 20px;
         border-radius: 5px;
         display: flex;
@@ -166,6 +166,7 @@
       #trigger-modal .modal-content #form-ct form > div input {
         width: 80%;
         max-width: 400px;
+        color: #a3b68f;
       }
 
       @media screen and (max-width: 1600px) {
@@ -334,14 +335,14 @@
       .modal-content {
         background-color: #31372b;
         padding: 20px;
-        border: 1px solid #888;
+        border: 1px solid #a3b68f;
         width: 100%;
         max-width: 800px;
         display: flex;
         flex-direction: row;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        color: #d7d9d4;
+        color: #a3b68f;
         overflow: auto;
       }
 
@@ -478,8 +479,8 @@
 
         <div id="form-ct">
           <form>
+            <h3>Register</h3>
             <div id="user-details">
-              <h3>User Details</h3>
               <input
                 type="text"
                 id="givenName"
@@ -510,7 +511,6 @@
               />
             </div>
             <div id="address-details">
-              <h3>Addresses</h3>
               <input
                 type="text"
                 id="homeAddress"
@@ -527,7 +527,6 @@
               />
             </div>
             <div id="contact-details">
-              <h3>Contacts</h3>
               <input
                 type="tel"
                 id="mobileNumber"
