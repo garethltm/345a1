@@ -92,7 +92,6 @@
           font-family: "Font Awesome 5 Free";
           font-weight: 900;
           color: #c8e1b0;
-
         }
 
         #registerBtn span {
@@ -114,12 +113,8 @@
         transition: background-color 0.3s ease;
       }
 
-      #trigger-modal
-        .modal-content
-        #form-ct
-        form
-        input[type="submit"]:hover {
-        background-color: #31372B;
+      #trigger-modal .modal-content #form-ct form input[type="submit"]:hover {
+        background-color: #31372b;
         color: #c8e1b0;
       }
 
@@ -137,17 +132,9 @@
       }
 
       #trigger-modal .modal-content #form-ct form input[type="text"]:focus,
-      #trigger-modal
-        .modal-content
-        #form-ct
-        form
-        input[type="password"]:focus,
+      #trigger-modal .modal-content #form-ct form input[type="password"]:focus,
       #trigger-modal .modal-content #form-ct form input[type="tel"]:focus,
-      #trigger-modal
-        .modal-content
-        #form-ct
-        form
-        input[type="email"]:focus {
+      #trigger-modal .modal-content #form-ct form input[type="email"]:focus {
         outline: none;
         border-color: #d7d9d4;
       }
@@ -166,7 +153,7 @@
         width: 65%;
         padding: 20px;
       }
-      
+
       #trigger-modal .modal-content #form-ct form > div {
         background-color: #57614c;
         padding: 20px;
@@ -175,7 +162,7 @@
         flex-direction: column;
         align-items: center;
       }
-      
+
       #trigger-modal .modal-content #form-ct form > div input {
         width: 80%;
         max-width: 400px;
@@ -283,7 +270,7 @@
         }
 
         .dropdown .dropdown-content a {
-          color: #31372B;
+          color: #31372b;
           padding: 10px;
           text-decoration: none;
           display: block;
@@ -358,6 +345,34 @@
         overflow: auto;
       }
 
+      @media (max-width: 768px) {
+        .modal-content {
+          max-height: 90vh;
+          overflow-y: auto;
+        }
+
+        .modal-content #form-ct {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .modal-content #form-ct form,
+        .modal-content #form-ct img {
+          width: 100%;
+          order: unset;
+        }
+
+        .modal-content #form-ct img {
+          display: none;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .modal-content {
+          overflow-y: auto;
+        }
+      }
+
       .modal-content #form-ct {
         display: flex;
         flex-direction: row;
@@ -369,7 +384,7 @@
         padding: 20px;
         order: 1;
       }
-      
+
       .modal-content #form-ct img {
         width: 35%;
         opacity: 0.5;
@@ -379,24 +394,23 @@
         order: 2;
       }
 
-
       @media (max-width: 768px) {
         .modal-content #form-ct {
           flex-direction: column;
           align-items: center;
         }
-      
+
         .modal-content #form-ct form,
         .modal-content #form-ct img {
           width: 100%;
           order: unset;
         }
-      
+
         .modal-content #form-ct img {
           margin-top: 20px;
         }
       }
-      
+
       .close {
         color: #c8e1b0;
         float: right;
@@ -472,28 +486,28 @@
                 name="givenName"
                 placeholder="Given Name"
                 required
-              /><br />
+              />
               <input
                 type="text"
                 id="surname"
                 name="surname"
                 placeholder="Surname"
                 required
-              /><br />
+              />
               <input
                 type="text"
                 id="username"
                 name="username"
                 placeholder="Username"
                 required
-              /><br />
+              />
               <input
                 type="password"
                 id="password"
                 name="password"
                 placeholder="Password"
                 required
-              /><br />
+              />
             </div>
             <div id="address-details">
               <h3>Addresses</h3>
@@ -503,14 +517,14 @@
                 name="homeAddress"
                 placeholder="Home Address"
                 required
-              /><br />
+              />
               <input
                 type="text"
                 id="workAddress"
                 name="workAddress"
                 placeholder="Work Address"
                 required
-              /><br />
+              />
             </div>
             <div id="contact-details">
               <h3>Contacts</h3>
@@ -520,14 +534,14 @@
                 name="mobileNumber"
                 placeholder="Mobile Number"
                 required
-              /><br />
+              />
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Email"
                 required
-              /><br />
+              />
             </div>
             <input type="submit" value="Submit" />
           </form>
@@ -536,7 +550,6 @@
       </div>
     </div>
 
-    
     <footer>
       <p>&copy; 2024 Freecycle!</p>
     </footer>
